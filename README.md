@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the implementation of a Retrieval Augmented Generation (RAG) system designed to answer questions about Pittsburgh and Carnegie Mellon University (CMU). The system utilized large language models (LLMs) such as Llama2 to enhance the knowledge base with relevant documents, thereby improving the accuracy of answers related to history, culture, trivia, and upcoming events.
+This repository contains the implementation of a Retrieval Augmented Generation (RAG) system designed to answer questions about Pittsburgh and CMU. The system utilized large language models (LLMs) such as Llama3.2 to enhance the knowledge base with relevant documents, thereby improving the accuracy of answers related to history, culture, trivia, and upcoming events.
 
 ## Task Specification
 
