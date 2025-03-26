@@ -76,4 +76,4 @@ The project required a machine with:
 - CUDA support
 - At least 50GB available disk space
 
-API keys for LangChain and Hugging Face were set up to access Llama-3.1 and Llama-3.2.
+Set up the API keys for LangChain and Hugging Face to access Llama-3.1 and Llama-3.2.
