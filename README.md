@@ -10,13 +10,10 @@ The project focused on factual question-answering (QA) specifically regarding Pi
 
 ## Key Checkpoints
 
-- **Task Specification:** Understood the task requirements for RAG.
 - **Raw Data Preparation:** Compiled a knowledge resource of relevant documents from various sources.
 - **Data Annotation:** Annotated data for both testing/analysis and training purposes.
 - **RAG System Development:** Developed a retrieval augmented generation system using open-source models and libraries.
 - **Result Generation:** Generated answers using the constructed system and validated against reference answers.
-- **Report Writing:** Documented the process and findings in a comprehensive report.
-- **Submission:** Submitted the outputs as per the assignment guidelines.
 
 ## Data Format
 
@@ -37,13 +34,16 @@ The knowledge resource included a mix of HTML pages, PDFs, and plain text docume
 
 ### Data Collection
 
-Processed HTML pages using `beautifulsoup4` and parsed PDF documents with `pypdf` and `pdfplumber` to create a clean dataset for model development.
+Created a clean dataset for model development:
+
+- Processed HTML pages using `beautifulsoup4`
+- Parsed PDF documents with `pypdf2`, `PyMuPDF`, `pdf2image`, and `pytesseract`
 
 ## Data Annotation
 
-Annotated question-answer pairs for testing and training purposes:
+Annotated question-answer pairs:
 
-- **Test Data:** Curated a diverse set of questions relevant to Pittsburgh and CMU, ensuring high quality and domain relevance.
+- **Test Set:** Curated a diverse set of questions relevant to Pittsburgh and CMU, ensuring high quality and domain relevance.
 - **Training Data:** Annotated training examples manually and explored existing datasets for transfer learning.
 
 ### Quality Estimation
@@ -76,4 +76,4 @@ The project required a machine with:
 - CUDA support
 - At least 50GB available disk space
 
-Necessary packages were installed, and API keys for LangChain and Hugging Face were set up to access Llama-3.1 and Llama-3.2.
+API keys for LangChain and Hugging Face were set up to access Llama-3.1 and Llama-3.2.
