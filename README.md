@@ -1,4 +1,4 @@
-# End-to-End Retrieval Augmented Generation (RAG) System for answering questions
+# End-to-End Retrieval Augmented Generation (RAG) System for Answering Questions
 
 ## Overview
 
