@@ -2,11 +2,11 @@
 
 ## Overview
 
-This repository contains the implementation of a *Retrieval Augmented Generation (RAG)* ([Lewis et al., 2021](https://arxiv.org/abs/2005.11401)) system designed to answer questions about Pittsburgh and CMU. The system utilized large language models (LLMs) such as Llama3.2 to enhance the knowledge base with relevant documents, thereby improving the accuracy of answers related to history, culture, trivia, and upcoming events.
+This repository contains the implementation of a Retrieval Augmented Generation (RAG) ([Lewis et al., 2021](https://arxiv.org/abs/2005.11401)) system designed to answer questions about Pittsburgh and CMU. The system utilized large language models (LLMs) such as Llama3.2 to enhance the knowledge base with relevant documents, thereby improving the accuracy of answers related to history, culture, trivia, and upcoming events.
 
 ## Task Specification
 
-The project focused on factual question-answering (QA) specifically regarding Pittsburgh and CMU. The system first retrieved relevant documents and then generated answers based on those documents.
+The project focused on factual question-answering (QA) ([Touvron et al., 2023](https://arxiv.org/abs/2307.09288)) specifically regarding Pittsburgh and CMU. The system first retrieved relevant documents and then generated answers based on those documents.
 
 ## Key Checkpoints
 
