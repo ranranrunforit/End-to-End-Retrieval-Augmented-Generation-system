@@ -66,7 +66,7 @@ Executed the system on an unseen test set curated by the course staff to evaluat
 
 ### Evaluation Metrics
 
-Submissions were evaluated based on standard metrics including answer recall, exact match, and F1 score, following the methodology outlined in the SQuAD paper.
+Results were evaluated based on standard metrics including answer recall, exact match, and F1 score, following the methodology outlined in the SQuAD paper.
 
 ## Usage Instructions
 
