@@ -6,7 +6,7 @@ This repository contains the implementation of a Retrieval Augmented Generation 
 
 ## Task Specification
 
-The project focused on factual question-answering (QA) ([Touvron et al., 2023](https://arxiv.org/abs/2307.09288)) specifically regarding Pittsburgh and CMU. The system first retrieved relevant documents and then generated answers based on those documents. The system utilized large language models (LLMs) such as Llama3.2 to enhance the knowledge base with relevant documents, thereby improving the accuracy of answers related to history, culture, trivia, and upcoming events.
+The project focused on factual question-answering (QA) ([Touvron et al., 2023](https://arxiv.org/abs/2307.09288)) specifically regarding Pittsburgh and CMU. The system first retrieved relevant documents and then generated answers based on those documents. The system utilized large language models (LLMs) such as Llama 3.2 to enhance the knowledge base with relevant documents, thereby improving the accuracy of answers related to history, culture, trivia, and upcoming events.
 
 ## Key Checkpoints
 
@@ -58,7 +58,7 @@ Developed the RAG system with the following components:
 2. **Document Retriever**
 3. **Document Reader (Question-Answering System)**
 
-Utilized LangChain’s open-source libraries to construct the system.
+Utilized [langchain&#39;s RAG stack](https://python.langchain.com/docs/use_cases/question_answering/local_retrieval_qa) to construct the system.
 
 ## Result Generation
 
@@ -76,4 +76,12 @@ The project required a machine with:
 - CUDA support
 - At least 50GB available disk space
 
-Set up the API keys for LangChain and Hugging Face to access Llama-3.1 and Llama-3.2.
+Set up the API keys for LangChain and [Hugging Face](https://huggingface.co/models) to access Llama-3.1 and Llama-3.2.
+
+
+## References
+
++ Lewis et al., 2021. [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401).
++ Touvron et al., 2023. [Llama 2: Open Foundation and Fine-Tuned Chat Models](https://arxiv.org/abs/2307.09288).
++ Vu et al., 2023. [FreshLLMs: Refreshing Large Language Models with Search Engine Augmentation](https://arxiv.org/abs/2310.03214).
+
