@@ -58,11 +58,11 @@ Developed the RAG system with the following components:
 2. **Document Retriever**
 3. **Document Reader (Question-Answering System)**
 
-Utilized resources such as LangChain’s open-source libraries to construct the system.
+Utilized LangChain’s open-source libraries to construct the system.
 
 ## Result Generation
 
-Executed the system on an unseen test set curated by the course staff to evaluate its performance. 
+Executed the system on an unseen test set to evaluate its performance. 
 
 ### Evaluation Metrics
 
