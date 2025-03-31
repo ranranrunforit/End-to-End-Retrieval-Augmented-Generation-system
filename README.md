@@ -43,8 +43,8 @@ Created a clean dataset for model development:
 
 Annotated question-answer pairs:
 
-- **Test Set:** Curated a diverse set of questions relevant to Pittsburgh and CMU, ensuring high quality and domain relevance.
-- **Training Data:** Annotated training examples manually and explored existing datasets for transfer learning.
+- Curated a diverse set of questions relevant to Pittsburgh and CMU, ensuring high quality and domain relevance.
+- Annotated examples manually and explored existing datasets for transfer learning.
 
 ### Quality Estimation
 
@@ -58,7 +58,7 @@ Developed the RAG system with the following components:
 2. **Document Retriever**
 3. **Document Reader (Question-Answering System)**
 
-Utilized resources such as LangChain’s RAG stack, LlamaIndex, and other open-source libraries to construct the system.
+Utilized resources such as LangChain’s open-source libraries to construct the system.
 
 ## Result Generation
 
