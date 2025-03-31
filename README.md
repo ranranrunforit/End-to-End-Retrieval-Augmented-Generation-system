@@ -66,7 +66,7 @@ Executed the system on an unseen test set to evaluate its performance.
 
 ### Evaluation Metrics
 
-Results were evaluated based on standard metrics including answer recall, exact match, and F1 score, following the methodology outlined in the SQuAD paper.
+Results were evaluated based on standard metrics including answer recall, exact match, and F1 score, following the methodology outlined in section 6.1 of the SQuAD paper [original SQuAD paper](https://arxiv.org/abs/1606.05250) .
 
 ## Usage Instructions
 
