@@ -96,4 +96,5 @@ Set up the API keys for [LangChain](https://www.langchain.com) and [Hugging Face
 + Lewis et al., 2021. [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401).
 + Touvron et al., 2023. [Llama 2: Open Foundation and Fine-Tuned Chat Models](https://arxiv.org/abs/2307.09288).
 + Vu et al., 2023. [FreshLLMs: Refreshing Large Language Models with Search Engine Augmentation](https://arxiv.org/abs/2310.03214).
++ Gao et al., 2022. [Precise zero-shot dense retrieval without relevance labels](https://arxiv.org/abs/2212.10496).
 
