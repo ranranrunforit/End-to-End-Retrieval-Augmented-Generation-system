@@ -8,6 +8,26 @@ This repository contains the implementation of a Retrieval Augmented Generation 
 
 The project focused on factual question-answering (QA) ([Touvron et al., 2023](https://arxiv.org/abs/2307.09288)) specifically regarding Pittsburgh and CMU. The system first retrieved relevant documents and then generated answers based on those documents. The system adopted large language models (LLMs) such as Llama 3.2 to enhance the knowledge base with relevant documents, thereby improving the accuracy of answers related to history, culture, trivia, and upcoming events.
 
+## Project Workflow
+
+The project workflow includes four major components: data acquisition, QA-pair annotation, RAG pipeline implementation, and evaluation analysis.
+
+### Data Acquisition
+
+Relevant URLs were manually collected to construct the knowledge base. For each web page, one layer of sub-links was also collected. The crawled data for the manually collected URLs was used for both the RAG document base and QA pairs generation, while the crawled data for sub-links was used exclusively for the RAG document base.
+
+### QA-Pair Annotation
+
+The QA-pair annotation process was automated using a large language model (LLM) and prompt engineering to extract question-answer pairs from each document. The generated QA pairs were manually evaluated using the inter-annotator agreement (IAA) pipeline to ensure quality. These QA pairs were used to evaluate the performance of the QA system with the RAG pipeline.
+
+### RAG Pipeline Implementation
+
+The RAG pipeline was implemented using a few-shot learning approach with an LLM. This required selecting a base LLM, document embedding and retrieval methods, and designing effective prompts for the system.
+
+### Evaluation Analysis
+
+The evaluation process adopted three metrics from the SQuAD paper ([Rajpurkar et al., 2016](https://arxiv.org/abs/1606.05250)): Exact Match, Answer Recall, and F1 score. The questions from the generated QA pairs were fed into the QA system with the RAG pipeline. The generated results were compared with the answers from the QA pairs to calculate the three metrics.
+
 ## Key Checkpoints
 
 - **Raw Data Preparation:** Compiled a knowledge resource of relevant documents from various sources.
@@ -97,4 +117,5 @@ Set up the API keys for [LangChain](https://www.langchain.com) and [Hugging Face
 + Touvron et al., 2023. [Llama 2: Open Foundation and Fine-Tuned Chat Models](https://arxiv.org/abs/2307.09288).
 + Vu et al., 2023. [FreshLLMs: Refreshing Large Language Models with Search Engine Augmentation](https://arxiv.org/abs/2310.03214).
 + Gao et al., 2022. [Precise zero-shot dense retrieval without relevance labels](https://arxiv.org/abs/2212.10496).
++ Rajpurkar et al., 2016. [SQuAD: 100,000+ Questions for Machine Comprehension of Text](https://arxiv.org/abs/1606.05250).
 
