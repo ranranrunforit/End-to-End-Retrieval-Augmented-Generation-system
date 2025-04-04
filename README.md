@@ -64,8 +64,8 @@ Utilized [langchain&#39;s RAG stack](https://python.langchain.com/docs/use_cases
 
 Experimented serveral RAG strategies to improve performance:
 
-- **Custom Text Splitters:** Experimented with different types of splitters, including recursive, character, token, and semantic splitters.
-- **Embedding Models:** Compared multiple embedding models, such as `sentence-transformers/all-MiniLM-L6-v2` and `sentence-transformers/all-MiniLM-L12-v2`.
+- **Custom Text Splitters:** Experimented with different types of splitters, including `recursive`, `character`, `token`, and `semantic` splitters.
+- **Embedding Models:** Compared multiple embedding models, such as `sentence-transformers/all-MiniLM-L6-v2` and `sentence-transformers/all-mpnet-base-v2`.
 - **Document Retrieval Methods:** Evaluated FAISS and CHROMA retrievers with different algorithms, such as similarity search and MMR.
 - **Reranking:** Implemented reranking using models like `ms-marco-MiniLM-L-12-v2` and `ms-marco-MultiBERT-L-12`.
 - **Hypothetical Document Embeddings (HyDE):** Used hypothetical document embeddings ([Gao et al., 2022](https://arxiv.org/abs/2212.10496)) to improve retrieval quality.
