@@ -72,11 +72,11 @@ Results were evaluated based on standard metrics including answer recall, exact 
 
 The project required a machine with:
 
-- GPU memory > 20GB
+- GPU memory >= 20GB
 - CUDA support
 - At least 50GB available disk space
 
-Set up the API keys for LangChain and [Hugging Face](https://huggingface.co/models) to access Llama-3.1 and Llama-3.2.
+Set up the API keys for [LangChain](https://www.langchain.com) and [Hugging Face](https://huggingface.co/models) to access Llama-3.2.
 
 
 ## References
