@@ -2,11 +2,11 @@
 
 ## Overview
 
-This repository contains the implementation of a Retrieval Augmented Generation (RAG) ([Lewis et al., 2021](https://arxiv.org/abs/2005.11401)) system designed to answer questions about Pittsburgh and CMU. 
+This repository contains the implementation of a Retrieval Augmented Generation (RAG) ([Lewis et al., 2021](https://arxiv.org/abs/2005.11401)) system designed to answer questions about Pittsburgh and CMU.
 
 ## Task Specification
 
-The project focused on factual question-answering (QA) ([Touvron et al., 2023](https://arxiv.org/abs/2307.09288)) specifically regarding Pittsburgh and CMU. The system first retrieved relevant documents and then generated answers based on those documents. The system utilized large language models (LLMs) such as Llama 3.2 to enhance the knowledge base with relevant documents, thereby improving the accuracy of answers related to history, culture, trivia, and upcoming events.
+The project focused on factual question-answering (QA) ([Touvron et al., 2023](https://arxiv.org/abs/2307.09288)) specifically regarding Pittsburgh and CMU. The system first retrieved relevant documents and then generated answers based on those documents. The system adopted large language models (LLMs) such as Llama 3.2 to enhance the knowledge base with relevant documents, thereby improving the accuracy of answers related to history, culture, trivia, and upcoming events.
 
 ## Key Checkpoints
 
@@ -60,6 +60,16 @@ Developed the RAG system with the following components:
 
 Utilized [langchain&#39;s RAG stack](https://python.langchain.com/docs/use_cases/question_answering/local_retrieval_qa) to construct the system.
 
+### RAG Strategies
+
+Experimented serveral RAG strategies to improve performance:
+
+- **Custom Text Splitters:** Experimented with different types of splitters, including recursive, character, token, and semantic splitters.
+- **Embedding Models:** Compared multiple embedding models, such as `sentence-transformers/all-MiniLM-L6-v2` and `sentence-transformers/all-MiniLM-L12-v2`.
+- **Document Retrieval Methods:** Evaluated FAISS and CHROMA retrievers with different algorithms, such as similarity search and MMR.
+- **Reranking:** Implemented reranking using models like `ms-marco-MiniLM-L-12-v2` and `ms-marco-MultiBERT-L-12`.
+- **Hypothetical Document Embeddings (HyDE):** Used hypothetical document embeddings ([Gao et al., 2022](https://arxiv.org/abs/2212.10496)) to improve retrieval quality.
+
 ## Result Generation
 
 Executed the system on an unseen test set to evaluate its performance. 
@@ -70,14 +80,16 @@ Results were evaluated based on standard metrics including answer recall, exact 
 
 ## Usage Instructions
 
+### Hardware Requirements
 The project required a machine with:
 
 - GPU memory >= 20GB
 - CUDA support
 - At least 50GB available disk space
 
-Set up the API keys for [LangChain](https://www.langchain.com) and [Hugging Face](https://huggingface.co/models) to access Llama-3.2.
+### API Keys
 
+Set up the API keys for [LangChain](https://www.langchain.com) and [Hugging Face](https://huggingface.co/models) to access Llama-3.2.
 
 ## References
 
