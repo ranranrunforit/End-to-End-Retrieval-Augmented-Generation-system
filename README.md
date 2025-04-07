@@ -6,7 +6,7 @@ This repository contains the implementation of a Retrieval Augmented Generation 
 
 ## Task Specification
 
-The project focused on factual question-answering (QA) ([Touvron et al., 2023](https://arxiv.org/abs/2307.09288)) specifically regarding Pittsburgh and CMU. The system first retrieved relevant documents and then generated answers based on those documents. The system adopted large language models (LLMs) such as Llama 3.2 to enhance the knowledge base with relevant documents, thereby improving the accuracy of answers related to history, culture, trivia, and upcoming events.
+The project focused on factual question-answering (QA) ([Touvron et al., 2023](https://arxiv.org/abs/2307.09288)) specifically regarding Pittsburgh and CMU. The system first retrieved relevant documents and then generated answers based on those documents. The system adopted large language models (LLMs) such as Llama 3.2, Gemini 2.0 Flash Thinking to enhance the knowledge base with relevant documents, thereby improving the accuracy of answers related to history, culture, trivia, and upcoming events.
 
 ## Project Workflow
 
