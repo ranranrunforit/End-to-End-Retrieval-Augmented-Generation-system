@@ -28,7 +28,7 @@ The RAG pipeline was implemented using a few-shot learning approach with an LLM.
 
 The evaluation process adopted three metrics from the SQuAD paper ([Rajpurkar et al., 2016](https://arxiv.org/abs/1606.05250)): Exact Match, Answer Recall, and F1 score. The questions from the generated QA pairs were fed into the QA system with the RAG pipeline. The generated results were compared with the answers from the QA pairs to calculate the three metrics.
 
-## Key Checkpoints
+## Key Points
 
 - **Raw Data Preparation:** Compiled a knowledge resource of relevant documents from various sources.
 - **Data Annotation:** Annotated data for both testing/analysis and training purposes.
