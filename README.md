@@ -6,7 +6,7 @@ This repository contains the implementation of a Retrieval Augmented Generation 
 
 ## Task Specification
 
-The project focused on factual question-answering (QA) ([Touvron et al., 2023](https://arxiv.org/abs/2307.09288)) specifically regarding Pittsburgh and CMU. The system first retrieved relevant documents and then generated answers based on those documents. The system adopted large language models (LLMs) such as Llama 3.1, Gemini 2.0 Flash Thinking to enhance the knowledge base with relevant documents, thereby improving the accuracy of answers related to history, culture, trivia, and upcoming events.
+The project focuses on factual question-answering (QA) ([Touvron et al., 2023](https://arxiv.org/abs/2307.09288)) specifically related to Pittsburgh and CMU. The system retrieves relevant documents and generates answers based on those documents. Large language models (LLMs), such as `meta-llama/Llama-3.1` and `gemini-2.0-flash-thinking`, are used to enhance the knowledge base with relevant documents, improving the accuracy of answers related to history, culture, trivia, and upcoming events.
 
 ## Project Workflow
 
@@ -14,15 +14,15 @@ The project workflow includes four major components: data acquisition, QA-pair a
 
 ### Data Acquisition
 
-Relevant URLs were manually collected to construct the knowledge base. For each web page, one layer of sub-links was also collected. The crawled data for the manually collected URLs was used for both the RAG document base and QA pairs generation, while the crawled data for sub-links was used exclusively for the RAG document base.
+Relevant URLs were manually collected to construct the knowledge base. For each web page, one layer of sub-links was also collected. The crawled data from the manually collected URLs was used for both the RAG document base and QA pair generation, while the crawled data from sub-links was used exclusively for the RAG document base.
 
 ### QA-Pair Annotation
 
-The QA-pair annotation process was automated using a large language model (LLM) and prompt engineering to extract question-answer pairs from each document. The generated QA pairs were manually evaluated using the inter-annotator agreement (IAA) pipeline to ensure quality. These QA pairs were used to evaluate the performance of the QA system with the RAG pipeline.
+The QA-pair annotation process was automated using a large language model (LLM) and prompt engineering to extract question-answer pairs from each document. The generated QA pairs were manually evaluated using an inter-annotator agreement (IAA) pipeline to ensure quality. These QA pairs were used to evaluate the performance of the QA system with the RAG pipeline.
 
 ### RAG Pipeline Implementation
 
-The RAG pipeline was implemented using a few-shot learning approach with an LLM. This required selecting a base LLM, document embedding and retrieval methods, and designing effective prompts for the system.
+The RAG pipeline was implemented using a few-shot learning approach with an LLM. This involved selecting a base LLM, designing document embedding and retrieval methods, and creating effective prompts for the system.
 
 ### Evaluation Analysis
 
@@ -86,10 +86,10 @@ Experimented serveral RAG strategies to improve performance:
 
 - **Custom Text Splitters:** Experimented with different types of splitters, including `recursive`, `character`, `token`, and `semantic` splitters.
 - **Embedding Models:** Compared multiple embedding models, such as `sentence-transformers/all-MiniLM-L6-v2` and `sentence-transformers/all-mpnet-base-v2`.
+- **LLM Models:** Evaluated the performance of four backbone models (`meta-llama/Llama-3.2-3B-Instruct`, `meta-llama/Llama-3.1-8B-Instruct`, `gemini-2.0-flash`, and `gemini-2.0-flash-thinking-exp-01-21`) without the RAG pipeline. Used consistent data type (fp16), tokenizer configuration, and prompt format for fair comparison.
 - **Document Retrieval Methods:** Evaluated `FAISS` and `CHROMA` retrievers with different algorithms, such as similarity search and MMR.
 - **Reranking:** Implemented reranking using models like `ms-marco-MiniLM-L-12-v2` and `ms-marco-MultiBERT-L-12`.
 - **Hypothetical Document Embeddings (HyDE):** Used hypothetical document embeddings ([Gao et al., 2022](https://arxiv.org/abs/2212.10496)) to improve retrieval quality.
-- **Baseline Model Comparison:** Evaluated the performance of four backbone models, `meta-llama/Llama-3.2-3B-Instruct`, `meta-llama/Llama-3.1-8B-Instruct`, `gemini-2.0-flash`, and `gemini-2.0-flash-thinking-exp-01-21` without the RAG pipeline. Used consistent data type (fp16), tokenizer configuration, and prompt format for fair comparison.
 
 ## Result Generation
 
