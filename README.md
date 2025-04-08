@@ -6,7 +6,7 @@ This repository contains the implementation of a Retrieval Augmented Generation 
 
 ## Project Specification
 
-The project focuses on factual question-answering (QA) ([Touvron et al., 2023](https://arxiv.org/abs/2307.09288)) specifically related to Pittsburgh and CMU. The system retrieves relevant documents and generates answers based on those documents. Large language models (LLMs), such as `meta-llama/Llama-3.1` and `gemini-2.0-flash-thinking`, are used to enhance the knowledge base with relevant documents, improving the accuracy of answers related to history, culture, trivia, and upcoming events.
+The project focuses on factual question-answering (QA) ([Touvron et al., 2023](https://arxiv.org/abs/2307.09288)) specifically related to Pittsburgh and CMU. The system retrieves relevant documents and generates answers based on those documents. Large language models (LLMs), such as `meta-llama/Llama-3.1-8B-Instruct` and `gemini-2.0-flash-thinking`, are used to enhance the knowledge base with relevant documents, improving the accuracy of answers related to history, culture, trivia, and upcoming events.
 
 ## RAG Workflow
 
