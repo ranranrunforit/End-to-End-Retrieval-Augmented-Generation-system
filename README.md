@@ -86,7 +86,7 @@ Experimented serveral RAG strategies to improve performance:
 
 - **Custom Text Splitters:** Experimented with different types of splitters, including `recursive`, `character`, `token`, and `semantic` splitters.
 - **Embedding Models:** Compared multiple embedding models, such as `sentence-transformers/all-MiniLM-L6-v2` and `sentence-transformers/all-mpnet-base-v2`.
-- **LLM Models:** Evaluated the performance of four backbone models (`meta-llama/Llama-3.2-3B-Instruct`, `meta-llama/Llama-3.1-8B-Instruct`, `gemini-2.0-flash`, and `gemini-2.0-flash-thinking-exp-01-21`) without the RAG pipeline. Used consistent data type (fp16), tokenizer configuration, and prompt format for fair comparison.
+- **LLM Models:** Evaluated the performance of four backbone models (`meta-llama/Llama-3.2-3B-Instruct`, `meta-llama/Llama-3.1-8B-Instruct`, `gemini-2.0-flash`, and `gemini-2.0-flash-thinking-exp-01-21`) without the RAG pipeline. 
 - **Document Retrieval Methods:** Evaluated `FAISS` and `CHROMA` retrievers with different algorithms, such as similarity search and MMR.
 - **Reranking:** Implemented reranking using models like `ms-marco-MiniLM-L-12-v2` and `ms-marco-MultiBERT-L-12`.
 - **Hypothetical Document Embeddings (HyDE):** Used hypothetical document embeddings ([Gao et al., 2022](https://arxiv.org/abs/2212.10496)) to improve retrieval quality.
